@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font: normal 500 20px/30px var(--roboto);
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* CSS VARIABLES */
+
+:root {
+  --primary-color: #ff7926;
+  --primary-colo2: #ffa61f;
+  --title-color: black;
+  --text-color: #777777;
+  --border-color: #201f1f17;
+  --gradient-color: linear-gradient(90deg, #ff7926 0%, #ffa61f 100%);
+  --shadow-color: 0px 10px 30 px rgba(225, 141, 85, 0.3);
+  --box-shadow: 0px 10px 30px rgba(61, 58, 56, 0.205);
+  --roboto: 'Roboto', cursive;
+}
+
+/* NAV */
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand > img {
+  width: 12rem;
+}
+
+.header .main-menu .nav-item .nav-link {
+  font: 700 15px/2px var(--roboto);
+  text-transform: uppercase;
+  padding-top: 2rem;
+  color: var(--title-color);
+}
+
+.header .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*  BANNER */
+.site-banner {
+  background: url('../img/banner3.png') no-repeat 0% 50%;
+  padding-left: 1rem;
+}
+
+.row > div > h3 {
+  padding-top: 2rem;
+  font-weight: 500;
+}
+
+.row > div > h3::after {
+  content: '';
+  height: 2px;
+  width: 18vw;
+  background: var(--title-color);
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+.row > div > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.row > div > h4 {
+  font-size: 1.5rem;
+}
+
+.banner-image > img {
+  margin: 3rem 0rem;
+  border-radius: 100%;
+  box-shadow: var(--box-shadow);
+}
+
+.title-text {
+  font: normal bold 30px/72px var(--roboto);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* BUTTONS */
+
+.primary-button {
+  padding: 0.5rem 0.5rem;
+  margin-right: 1rem;
+  border: solid 2px transparent;
+  font-weight: 900;
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.primary-button > a:active {
+  color: black;
+}
+
+.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: var(--title-color);
+  border-color: var(--primary-color);
+}
+
+.secondary-button {
+  background: whitesmoke;
+  background-clip: padding-box;
+  border: solid 2px var(--primary-color);
+  transition: background 0.6s ease;
+  padding: 0.5rem 0.5rem;
+  color: var(--title-color);
+  font-weight: 900;
+  box-shadow: var(--box-shadow);
+}
+.secondary-button > a {
+  color: var(--title-color);
+}
+
+.secondary-button:hover {
+  background: var(--gradient-color);
+  color: whitesmoke;
+  box-shadow: var(--box-shadow);
+  border: solid 2px whitesmoke;
+}
+
+/* ABOUT */
+.about-area {
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.about-title > button {
+  width: 50%;
+}
+
+.about-title > button > a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.about-title > button > a:hover {
+  color: var(--title-color);
+}
+
+.about-title > h2 > span {
+  display: block;
+  font: normal bold 30px/40px var(--roboto);
+  letter-spacing: 12px;
+}
+
+.about-title > p {
+  padding: 0.5rem 0;
+}
+
+.about-image > img {
+  width: 20rem;
+}
+
+/* PROJECTS */
+
+.projects {
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgba(128, 128, 128, 0.089);
+}
+
+.projects-title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font: normal bold 40px var(--roboto);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  margin: 1rem 1rem;
+  width: 18rem;
+}
+.card-title {
+  font: normal bold 20px var(--roboto);
+}
+
+.card:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+
+/* SKILL */
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  font: normal bold 40px var(--roboto);
+}
+
+.skills-wrapper {
+  padding-top: 1rem;
+}
+.skills-wrapper > div > img {
+  padding: 0.5rem;
+}
+
+.icon {
+  width: 5rem;
+  padding: 20px;
+  margin: 10px;
+}
+
+.icon:hover {
+  box-shadow: var(--box-shadow);
+}
+
+/* FOLLOW ME */
+
+.follow {
+  padding-top: 2rem;
+}
+
+.site-logo > a > img {
+  width: 5rem;
+}
+
+.social {
+  padding: 2rem;
+}
+.social > h5 {
+  font: normal bold 20px var(--roboto);
+  padding-bottom: 1rem;
+}
+
+.social > a > img {
+  width: 2rem;
+}
+
+.social > a > img:hover {
+  transform: scale(1.1);
+}
+
+.social > a {
+  padding: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: white;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+}
+footer > div > p {
+  font-size: small;
+  line-height: 2rem;
+  font-weight: 550;
+}
+
+@media (min-width: 700px) {
+  /* BANNER */
+  .banner-image > img {
+    width: 30rem;
+    margin-left: 6rem;
+  }
+
+  /* ABOUT */
+  .about-image > img {
+    margin-left: 10rem;
+  }
+
+  .about-area {
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+
+  /* PROJECTS */
+
+  .projects-container {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 18rem;
+  }
+  .card-body > p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  /* SKILLS */
+  .icon {
+    width: 8rem;
+  }
+
+  /* FOOTER */
+
+  footer > div > p {
+    font-size: smaller;
+  }
+}
+
+@media (min-width: 992px) {
+  /* BANNER */
+  .row > div > h1 {
+    font-size: 4.5rem;
+  }
+
+  .site-banner {
+    margin-top: 4rem;
+  }
+
+  .title-text {
+    font: normal bold 50px/72px var(--roboto);
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 1.4rem;
+  }
+
+  .secondary-button > a {
+    color: var(--title-color);
+  }
+  .banner-image > img {
+    margin-left: 2rem;
+  }
+
+  /* ABOUT */
+
+  .about-image > img {
+    width: 25rem;
+    margin-left: 6rem;
+    padding-top: 4rem;
+  }
+
+  .about-area {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .about-title > h2 > span {
+    font-size: 40px;
+    padding-top: 0.5rem;
+    letter-spacing: 18px;
+  }
+
+  .about-title > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /* PROJECTS */
+
+  .projects-title {
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+
+  .card-body > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .card-title {
+    font: normal bold 30px var(--roboto);
+  }
+
+  .projects-container {
+    justify-content: space-around;
+  }
+
+  .card {
+    margin: 0;
+    width: 22rem;
+  }
+
+  .card-body > a {
+    font-size: 1.5rem;
+  }
+
+  /* SKILLS */
+
+  .skill-header {
+    padding-top: 3rem;
+    font-size: 40px;
+  }
+
+  .icon {
+    width: 12rem;
+    margin: 2rem;
+  }
+
+  /* FOLLOW ME */
+
+  .site-logo {
+    margin-top: 3rem;
+  }
+  .site-logo > a > img {
+    width: 8rem;
+  }
+
+  .social > h5 {
+    font-size: 30px;
+  }
+
+  .social > a > img {
+    width: 3rem;
+  }
+
+  /* FOOTER */
+
+  footer > div > p {
+    font-size: larger;
+    font-weight: 600;
+    padding: 1rem;
+  }
+}
