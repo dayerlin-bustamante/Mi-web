@@ -130,23 +130,24 @@ header {
 }
 
 .primary-button:hover {
+  color: black;
   background: whitesmoke;
   background-clip: padding-box;
   border-color: var(--primary-color);
 }
+.secondary-button > a {
+  color: black;
+}
 
 .secondary-button {
+  color:black;
   background: whitesmoke;
   background-clip: padding-box;
   border: solid 2px var(--primary-color);
   transition: background 0.6s ease;
   padding: 0.5rem 0.5rem;
-  color: var(--title-color);
   font-weight: 900;
   box-shadow: var(--box-shadow);
-}
-.secondary-button > a {
-  color: var(--title-color);
 }
 
 .secondary-button:hover {
@@ -155,6 +156,11 @@ header {
   box-shadow: var(--box-shadow);
   border: solid 2px whitesmoke;
 }
+
+.secondary-button > a:active {
+  color: black;
+}
+
 
 /* ABOUT */
 .about-area {
@@ -313,6 +319,12 @@ footer > div > p {
     margin-left: 10rem;
   }
 
+  /* BUTTON */
+
+  .secondary-button {
+    color: black;
+  }
+
   .about-area {
     padding-left: 4rem;
     padding-right: 2rem;
@@ -376,8 +388,12 @@ footer > div > p {
     font-size: 1.4rem;
   }
 
+  .secondary-button {
+    color: black;
+  }
+
   .secondary-button > a {
-    color: var(--title-color);
+    color: black;
   }
   .banner-image > img {
     margin-left: 2rem;
