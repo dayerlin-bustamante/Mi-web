@@ -117,26 +117,26 @@ header {
   font-weight: 900;
   background: var(--gradient-color);
   background-clip: padding-box;
-  color: black;
+  color: whitesmoke;
   transition: background 0.6s ease;
   box-shadow: var(--box-shadow);
 }
 
 .primary-button > a:active {
-  color: black;
+  color: var(--title-color);
 }
 .primary-button > a:hover {
-  color: black;
+  color:  var(--title-color) !important;
 }
 
 .primary-button:hover {
-  color: black;
+  color: var(--title-color);
   background: whitesmoke;
   background-clip: padding-box;
   border-color: var(--primary-color);
 }
 .secondary-button > a {
-  color: black;
+  color: var(--title-color);
 }
 
 .secondary-button {
@@ -149,16 +149,18 @@ header {
   font-weight: 900;
   box-shadow: var(--box-shadow);
 }
+.secondary-button > a:hover{
+  color: whitesmoke !important;
+}
 
 .secondary-button:hover {
   background: var(--gradient-color);
-  color: whitesmoke;
   box-shadow: var(--box-shadow);
   border: solid 2px whitesmoke;
 }
 
 .secondary-button > a:active {
-  color: black;
+  color: var(--title-color);
 }
 
 
@@ -292,6 +294,13 @@ a:active {
 
 .social > a {
   padding: 1rem;
+}
+
+
+/* SCROOL */
+
+#scroll-up > img {
+  width: 3rem;
 }
 
 /* FOOTER */
@@ -440,12 +449,12 @@ footer > div > p {
   }
 
   .projects-container {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .card {
     margin: 0;
-    width: 22rem;
+    width: 20rem;
   }
 
   .card-body > a {
